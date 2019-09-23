@@ -42,6 +42,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="photoView" destination="aeW-Vd-rXE" id="cXv-CD-FAw"/>
+                                            <segue destination="ePG-SQ-S5L" kind="show" id="n85-pz-5MU"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -64,6 +65,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="957.97101449275374" y="23.4375"/>
+        </scene>
+        <!--PhotoDetailsViewController-->
+        <scene sceneID="aIo-FY-74T">
+            <objects>
+                <viewController title="PhotoDetailsViewController" id="ePG-SQ-S5L" customClass="PhotoDetailsViewController" customModule="TumblrApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vk9-pS-gnW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xej-Mb-YSJ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="327"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="pPB-WE-QM5"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qsa-c2-IGe"/>
+                    <connections>
+                        <outlet property="linkVIew" destination="Xej-Mb-YSJ" id="McQ-Cd-TJP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qMH-bO-Eyf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2105.7971014492755" y="22.767857142857142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="H6c-Ld-Me1">
